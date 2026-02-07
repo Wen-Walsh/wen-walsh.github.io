@@ -1,0 +1,170 @@
+/*  Base  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+  background: #0f0f12;
+  color: #f3f3f3;
+}
+
+/* Requirement: CSS selector styling an HTML tag */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*  Layout  */
+.container {
+  width: min(980px, 92%);
+  margin: 0 auto;
+}
+
+.card {
+  background: #17171c;
+  border: 1px solid #2a2a33;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 18px 0;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+/* Tablet+ */
+@media (min-width: 780px) {
+  .two-col {
+    grid-template-columns: 1.4fr 1fr;
+  }
+  .three-col {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*  Header  */
+.site-header {
+  background: linear-gradient(90deg, #151520, #101018);
+  border-bottom: 1px solid #2a2a33;
+  padding: 22px 0;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  margin: 6px 0 0 0;
+  color: #c9c9d6;
+}
+
+.avatar {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid #2a2a33;
+  justify-self: start;
+}
+
+/*  Navigation  */
+.site-nav {
+  position: sticky;
+  top: 0;
+  background: #111116;
+  border-bottom: 1px solid #2a2a33;
+}
+
+.nav-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #e9e9f2;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+/* Requirement: change color of links on hover */
+.nav-link:hover {
+  border-color: #4b4b5c;
+  background: #1a1a22;
+}
+
+/* Requirement: generic <a> hover color change */
+a:hover {
+  color: #c7a7ff;
+}
+
+/*  Components  */
+.section-title {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+}
+
+.mini-title {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+}
+
+.panel {
+  background: #121219;
+  border: 1px solid #2a2a33;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+/* Requirement: class used multiple times and styled */
+.accent {
+  background: #13131b;
+}
+
+.list {
+  margin: 8px 0 0 18px;
+}
+
+.muted {
+  color: #b8b8c6;
+}
+
+.link {
+  color: #b8c8ff;
+  text-decoration: none;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #2a2a33;
+  padding: 18px 0;
+  text-align: center;
+}
+
+/* Requirement: style an ID selector*/
+#top {
+  letter-spacing: 1px;
+}

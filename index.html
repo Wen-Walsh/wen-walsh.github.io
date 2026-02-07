@@ -1,1 +1,269 @@
-<link rel="stylesheet" href="stylesheet.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Requirement: HTML document structure and DOCTYPE -->
+
+    <!-- Requirement: character encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Requirement: viewport meta tag for responsive layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Requirement: meta description -->
+    <meta
+      name="description"
+      content="Personal website for homework: profile, interests, projects, and contact."
+    />
+
+    <!-- Requirement: page title -->
+    <title>Wen | Personal Website</title>
+
+    <!-- Requirement: external CSS stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+
+  <body>
+    <!-- Requirement: semantic HTML element (header), use of class and id -->
+    <!-- Top Banner -->
+    <header class="site-header">
+      <div class="container header-grid">
+        <div>
+          <!-- Requirement: heading element -->
+          <h1 class="title" id="top">Wen</h1>
+
+          <!-- Requirement: paragraph text -->
+          <p class="subtitle">
+            Embedded + algorithms | Grad student | Building cool stuff
+          </p>
+        </div>
+
+        <!-- Requirement: image element with alt text -->
+        <img
+          class="avatar"
+          src="profile.jpg"
+          alt="Profile photo of me smiling"
+        />
+      </div>
+    </header>
+
+    <!-- Requirement: navigation section with internal links -->
+    <nav class="site-nav">
+      <div class="container nav-row">
+        <!-- Requirement: anchor links -->
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#favorites">Favorites</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Requirement: semantic main content container -->
+    <main class="container">
+
+      <!-- ABOUT -->
+      <!-- Requirement: section element and headings -->
+      <section class="card" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <!-- Requirement: layout using div elements and classes -->
+        <div class="two-col">
+          <div class="panel">
+
+            <!-- Requirement: paragraph text -->
+            <p>
+              Hi! I am Wen. I am interested in embedded software, motors, and
+              algorithms. I like building systems that actually move in the real
+              world—control loops, firmware, and anything that feels like “math
+              meets hardware.”
+            </p>
+
+            <p>
+              This page is for a homework assignment using only HTML + CSS and
+              hosted on GitHub Pages.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3 class="mini-title">Quick Links</h3>
+
+            <!-- Requirement: unordered list -->
+            <ul class="list">
+              <li>
+                <!-- Requirement: external hyperlink -->
+                <a
+                  class="link"
+                  href="https://github.com/Wen-Walsh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >My GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link"
+                  href="https://www.linkedin.com/in/claire-wen-walsh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <!-- Requirement: internal hyperlink -->
+                <a class="link" href="mailto:claire.wen.walsh@gmail.com">claire.wen.walsh@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <!-- Requirement: section with multiple lists -->
+      <section class="card" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="three-col">
+
+          <!-- Requirement: div elements and class usage -->
+          <div class="panel accent">
+            <h3 class="mini-title">Programming</h3>
+
+            <!--Requirement: unordered list -->
+            <ul class="list">
+              <li>C / C++</li>
+              <li>Python</li>
+              <li>TypeScript</li>
+              <li>Git</li>
+            </ul>
+          </div>
+
+          <div class="panel accent">
+            <h3 class="mini-title">Embedded</h3>
+
+            <ul class="list">
+              <li>SPI / I2C / UART</li>
+              <li>Debugging + Troubleshooting</li>
+              <li>Control loops basics</li>
+              <li>RTOS concepts</li>
+            </ul>
+          </div>
+
+          <div class="panel accent">
+            <h3 class="mini-title">Web (for class)</h3>
+
+            <ul class="list">
+              <li>HTML structure</li>
+              <li>CSS layout</li>
+              <li>GitHub Pages deploy</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <!-- Requirement: table element -->
+      <section class="card" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="panel">
+          <p class="muted">
+            A small table of projects
+          </p>
+
+          <!-- Requirement: table with rows and columns -->
+          <table class="projects-table">
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Scope</th>
+                <th>Languages Used & Relevant Topics</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Motor Stabilization</td>
+                <td>Control-loop practice + firmware experiments</td>
+                <td>C, ARM-Cortex, Sensors integration</td>
+              </tr>
+              <tr>
+                <td>Course Website</td>
+                <td>This GitHub Pages site for homework</td>
+                <td>HTML, CSS</td>
+              </tr>
+              <tr>
+                <td>Algorithms Practice</td>
+                <td>Problem sets and various project implementations</td>
+                <td>Python, JAVA, DSA </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAVORITES -->
+      <!-- Requirement: ordered list -->
+      <section class="card" id="favorites">
+        <h2 class="section-title">Favorites</h2>
+
+        <div class="two-col">
+          <div class="panel">
+            <h3 class="mini-title">Other Niche Things I like</h3>
+
+            <!-- Requirement: ordered list -->
+            <ol class="list">
+              <li>Distributed systems + clean logic</li>
+              <li>Jewel tones & cool neutrals</li>
+              <li>Caffeine</li>
+            </ol>
+          </div>
+
+          <div class="panel">
+            <h3 class="mini-title">Fun fact</h3>
+
+            <!-- Requirement: paragraph -->
+            <p>
+              I enjoy building code that
+              controls hardware and implementing algorithms efficiently.
+            </p>
+
+            <!-- Requirement: internal hyperlink -->
+            <p>
+              <a class="button" href="#top">Back to top</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <!-- Requirement: contact section with email link -->
+      <section class="card" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="panel">
+          <p>
+            Email:
+            <!-- Requirement: mailto hyperlink -->
+            <a class="link" href="mailto:claire.wen.walsh@gmail.com"
+            >claire.wen.walsh@gmail.com</a
+            >
+        </p>
+
+          <p class="muted">
+            You can also find me on
+            <a class="link" href="https://www.linkedin.com/in/claire-wen-walsh" target="_blank" rel="noopener noreferrer"
+            >LinkedIn</a
+            >.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Requirement: footer section -->
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p class="muted">© 2026 Wen — built with HTML + CSS</p>
+        <a class="link" href="#top">Top</a>
+      </div>
+    </footer>
+  </body>
+</html>
