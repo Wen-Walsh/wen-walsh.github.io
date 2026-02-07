@@ -53,6 +53,30 @@ img {
   }
 }
 
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.projects-table th,
+.projects-table td {
+  border: 1px solid #2a2a33;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.projects-table th {
+  background: #121219;
+  color: #f3f3f3;
+}
+
+/* Helps with long text not destroy the layout */
+.projects-table td {
+  word-break: break-word;
+}
+
 /*  Header  */
 .site-header {
   background: linear-gradient(90deg, #151520, #101018);
@@ -168,3 +192,4 @@ a:hover {
 #top {
   letter-spacing: 1px;
 }
+
